@@ -880,7 +880,7 @@ HTML_TEMPLATE = """<!DOCTYPE html>
                 const dateKey = `${year}-${month}-${day}`;
 
                 const monthsRu = ['января', 'февраля', 'марта', 'апреля', 'мая', 'июня', 'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'];
-                const formattedDateStr = `${currentDay.getDate()} ${monthsRu[currentDay.getMonth()]} ${year % 100}, ${dayNames[i]}`;
+                const formattedDateStr = `${currentDay.getDate()} ${monthsRu[currentDay.getMonth()]}, ${dayNames[i]}`;
 
                 const dayTasks = state.tasks.filter(t => t.date === dateKey);
                 const isToday = new Date().toDateString() === currentDay.toDateString();
